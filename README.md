@@ -19,7 +19,7 @@ Directory | Description
 
 + **Website:** [www.GroupDocs.cloud](http://www.GroupDocs.cloud)
 + **Product Home:** [GroupDocs.Annotation Cloud SDK for Ruby](https://products.groupdocs.cloud/annotation/Ruby)
-+ **Download:** [Download GroupDocs.Annotation Cloud SDK for Ruby](https://www.nuget.org/packages/GroupDocs.Annotation-Cloud/)
++ **Download:** [Download GroupDocs.Annotation Cloud SDK for Ruby](https://rubygems.org/gems/groupdocs_annotation_cloud/)
 + **Documentation:** [GroupDocs.Annotation Cloud SDK Documentation](https://docs.groupdocs.cloud/display/annotationcloud/Home)
 + **Free Support:** [GroupDocs.Annotation Cloud SDK Free Support Forum](https://forum.groupdocs.cloud/c/annotation)
 + **Blog:** [GroupDocs.Annotation Cloud SDK Blog](https://blog.groupdocs.cloud/category/annotation/)
