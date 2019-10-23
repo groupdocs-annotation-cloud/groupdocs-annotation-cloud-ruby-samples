@@ -1,9 +1,9 @@
 require 'common_utilities/Utils.rb'
 
 # Get your app_sid and app_key at https://dashboard.groupdocs.cloud (free registration is required).
-$app_sid = "XXXXX-XXX"
-$app_key = "XXXXX"
-$myStorage = "MyStorage" #Put your storage name here
+$app_sid = "XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"
+$app_key = "XXXXXXXXXXXXXXX"
+$myStorage = "XXXXX" #Put your storage name here
 $host_url = "http://api.groupdocs.cloud"   # Put your Host URL here
 
 class Run_Examples
@@ -107,9 +107,53 @@ class Run_Examples
   #  puts("*** Executing Working_With_Annotations...")
   #  ##########################################
 
-  #  require 'Working_With_Annotations/Annotation_Ruby_Add_Annotation.rb'
-  #  puts("* Executing Annotation_Ruby_Add_Annotation...")
-  #  Working_With_Annotations.Annotation_Ruby_Add_Annotation()
+  #  require 'Working_With_Annotations/Annotation_Ruby_Add_Multiple_Annotations.rb'
+  #  puts("* Executing Annotation_Ruby_Add_Multiple_Annotations...")
+  #  Working_With_Annotations.Annotation_Ruby_Add_Multiple_Annotations()
+
+  #    require 'Working_With_Annotations/Annotation_Ruby_Add_Area_Annotation.rb'
+  #    puts("* Executing Annotation_Ruby_Add_Area_Annotation...")
+  #    Working_With_Annotations.Annotation_Ruby_Add_Area_Annotation()
+
+  #  require 'Working_With_Annotations/Annotation_Ruby_Add_Arrow_Annotation.rb'
+  #  puts("* Executing Annotation_Ruby_Add_Arrow_Annotation...")
+  #  Working_With_Annotations.Annotation_Ruby_Add_Arrow_Annotation()
+
+  #  require 'Working_With_Annotations/Annotation_Ruby_Add_Point_Annotation.rb'
+  #  puts("* Executing Annotation_Ruby_Add_Point_Annotation...")
+  #  Working_With_Annotations.Annotation_Ruby_Add_Point_Annotation()
+
+  #  require 'Working_With_Annotations/Annotation_Ruby_Add_Polyline_Annotation.rb'
+  #  puts("* Executing Annotation_Ruby_Add_Polyline_Annotation...")
+  #  Working_With_Annotations.Annotation_Ruby_Add_Polyline_Annotation()
+
+  #  require 'Working_With_Annotations/Annotation_Ruby_Add_Text_Annotation.rb'
+  #  puts("* Executing Annotation_Ruby_Add_Text_Annotation...")
+  #  Working_With_Annotations.Annotation_Ruby_Add_Text_Annotation()
+
+  #  require 'Working_With_Annotations/Annotation_Ruby_Add_TextField_Annotation.rb'
+  #  puts("* Executing Annotation_Ruby_Add_TextField_Annotation...")
+  #  Working_With_Annotations.Annotation_Ruby_Add_TextField_Annotation()
+
+  #  require 'Working_With_Annotations/Annotation_Ruby_Add_TextRedaction_Annotation.rb'
+  #  puts("* Executing Annotation_Ruby_Add_TextRedaction_Annotation...")
+  #  Working_With_Annotations.Annotation_Ruby_Add_TextRedaction_Annotation()
+
+  #  require 'Working_With_Annotations/Annotation_Ruby_Add_TextReplacement_Annotation.rb'
+  #  puts("* Executing Annotation_Ruby_Add_TextReplacement_Annotation...")
+  #  Working_With_Annotations.Annotation_Ruby_Add_TextReplacement_Annotation()
+
+  #  require 'Working_With_Annotations/Annotation_Ruby_Add_TextStrikeout_Annotation.rb'
+  #  puts("* Executing Annotation_Ruby_Add_TextStrikeout_Annotation...")
+  #  Working_With_Annotations.Annotation_Ruby_Add_TextStrikeout_Annotation()
+
+  #  require 'Working_With_Annotations/Annotation_Ruby_Add_TextUnderline_Annotation.rb'
+  #  puts("* Executing Annotation_Ruby_Add_TextUnderline_Annotation...")
+  #  Working_With_Annotations.Annotation_Ruby_Add_TextUnderline_Annotation()
+
+  #  require 'Working_With_Annotations/Annotation_Ruby_Add_Watermark_Annotation.rb'
+  #  puts("* Executing Annotation_Ruby_Add_Watermark_Annotation...")
+  #  Working_With_Annotations.Annotation_Ruby_Add_Watermark_Annotation()
 
   #  require 'Working_With_Annotations/Annotation_Ruby_Get_Annotation.rb'
   #  puts("* Executing Annotation_Ruby_Get_Annotation...")
