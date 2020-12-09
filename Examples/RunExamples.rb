@@ -3,11 +3,11 @@ require_relative './../../../GitLab/RubySdk/src/lib/groupdocs_annotation_cloud'
 
 require './Common.rb'
 
-# Get your app_sid and app_key at https://dashboard.groupdocs.cloud (free registration is required).
-$app_sid = "XXXX-XXXX-XXXX-XXXX"
-$app_key = "XXXXXXXXXXXXXXXX"
+# Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required).
+$client_id = "XXXX-XXXX-XXXX-XXXX"
+$client_secret = "XXXXXXXXXXXXXXXX"
 
-$config = GroupDocsAnnotationCloud::Configuration.new($app_sid, $app_key)
+$config = GroupDocsAnnotationCloud::Configuration.new($client_id, $client_secret)
 $config.api_base_url = "https://api.groupdocs.cloud"
 
 class RunExamples
