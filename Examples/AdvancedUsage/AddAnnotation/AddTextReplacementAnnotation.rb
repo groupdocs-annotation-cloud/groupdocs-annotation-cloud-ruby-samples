@@ -30,11 +30,19 @@ class AddTextReplacementAnnotation
     $a1.text_to_replace = "Text to replace"
     $a1.creator_name = "Anonym A."      
 
-    $request = GroupDocsAnnotationCloud::PostAnnotationsRequest.new("annotationdocs\\one-page.docx", [$a1])
+    file_info = GroupDocsAnnotationCloud::FileInfo.new()
+    file_info.file_path = "annotationdocs\\one-page.docx"
+
+    options = GroupDocsAnnotationCloud::AnnotateOptions.new()
+    options.file_info = file_info
+    options.annotations = [$a1]
+    options.output_path = "Output/output.docx"
+
+    $request = GroupDocsAnnotationCloud::AnnotateRequest.new(options)
 
     # Executing an API.
-    $api.post_annotations($request)
+    result = $api.annotate($request)
 
-    puts("AddTextReplacementAnnotation: Text Replacement Annotation added.")
+    puts("AddTextReplacementAnnotation: Text Replacement Annotation added: " + result.href)
   end
 end

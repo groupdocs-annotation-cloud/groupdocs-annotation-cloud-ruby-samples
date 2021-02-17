@@ -24,11 +24,19 @@ class AddTextFieldAnnotation
     $a1.text = "Text field text"
     $a1.creator_name = "Anonym A."      
 
-    $request = GroupDocsAnnotationCloud::PostAnnotationsRequest.new("annotationdocs\\one-page.docx", [$a1])
+    file_info = GroupDocsAnnotationCloud::FileInfo.new()
+    file_info.file_path = "annotationdocs\\one-page.docx"
+
+    options = GroupDocsAnnotationCloud::AnnotateOptions.new()
+    options.file_info = file_info
+    options.annotations = [$a1]
+    options.output_path = "Output/output.docx"
+
+    $request = GroupDocsAnnotationCloud::AnnotateRequest.new(options)
 
     # Executing an API.
-    $api.post_annotations($request)
+    result = $api.annotate($request)
 
-    puts("AddTextFieldAnnotation: Text Field Annotation added.")
+    puts("AddTextFieldAnnotation: Text Field Annotation added: " + result.href)
   end
 end

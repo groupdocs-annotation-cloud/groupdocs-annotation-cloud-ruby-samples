@@ -75,12 +75,20 @@ class AddMultipleAnnotations
     $a4.type = "Arrow"
     $a4.text = "This is arrow annotation"
     $a4.creator_name = "Anonym A."      
+    
+    file_info = GroupDocsAnnotationCloud::FileInfo.new()
+    file_info.file_path = "annotationdocs\\ten-pages.docx"
 
-    $request = GroupDocsAnnotationCloud::PostAnnotationsRequest.new("annotationdocs\\ten-pages.docx", [$a1, $a2, $a3, $a4])
+    options = GroupDocsAnnotationCloud::AnnotateOptions.new()
+    options.file_info = file_info
+    options.annotations = [$a1, $a2, $a3, $a4]
+    options.output_path = "Output/output.docx"
+
+    $request = GroupDocsAnnotationCloud::AnnotateRequest.new(options)
 
     # Executing an API.
-    $api.post_annotations($request)
+    result = $api.annotate($request)
 
-    puts("AddMultipleAnnotations: Multiple Annotations added.")
+    puts("AddMultipleAnnotations: Multiple Annotations added: " + result.href)
   end
 end

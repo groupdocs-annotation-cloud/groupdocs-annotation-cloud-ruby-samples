@@ -7,7 +7,10 @@ class GetDocumentInformation
     # Getting instance of the API
     $api = GroupDocsAnnotationCloud::InfoApi.from_config($config)
     
-    $request = GroupDocsAnnotationCloud::GetInfoRequest.new("annotationdocs\\one-page.docx")
+    file_info = GroupDocsAnnotationCloud::FileInfo.new()
+    file_info.file_path = "annotationdocs\\one-page.docx"
+
+    $request = GroupDocsAnnotationCloud::GetInfoRequest.new(file_info)
 
     # Executing an API.
     $response = $api.get_info($request)

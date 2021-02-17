@@ -1,5 +1,4 @@
-#require 'groupdocs_annotation_cloud'
-require_relative './../../../GitLab/RubySdk/src/lib/groupdocs_annotation_cloud'
+require 'groupdocs_annotation_cloud'
 
 require './Common.rb'
 
@@ -28,8 +27,8 @@ class RunExamples
   AddAreaAnnotation.Run()
   # require './AdvancedUsage/AddAnnotation/AddArrowAnnotation.rb'
   # AddArrowAnnotation.Run()
-  # require './AdvancedUsage/AddAnnotation/AddMultipleAnnotations.rb'
-  # AddMultipleAnnotations.Run()
+  require './AdvancedUsage/AddAnnotation/AddMultipleAnnotations.rb'
+  AddMultipleAnnotations.Run()
   # require './AdvancedUsage/AddAnnotation/AddPointAnnotation.rb'
   # AddPointAnnotation.Run()
   # require './AdvancedUsage/AddAnnotation/AddPolylineAnnotation.rb'
@@ -47,12 +46,12 @@ class RunExamples
   # require './AdvancedUsage/AddAnnotation/AddWatermarkAnnotation.rb'
   # AddWatermarkAnnotation.Run()                    
 
-  require './AdvancedUsage/GetAnnotations/GetAnnotations.rb'
-  GetAnnotations.Run()    
-  require './AdvancedUsage/ExportDocumentWithAnnotations/ExportDocument.rb'
-  ExportDocument.Run()    
-  require './AdvancedUsage/DeleteAnnotations/DeleteAnnotations.rb'
-  DeleteAnnotations.Run() 
+  require './AdvancedUsage/ExtractAnnotations/ExtractAnnotations.rb'
+  ExtractAnnotations.Run()    
+  require './AdvancedUsage/AddAnnotationsDirect/AddAnnotationsDirect.rb'
+  AddAnnotationsDirect.Run()    
+  require './AdvancedUsage/RemoveAnnotations/RemoveAnnotations.rb'
+  RemoveAnnotations.Run() 
   
   require './AdvancedUsage/DocumentPreview/GetPages.rb'
   GetPages.Run() 

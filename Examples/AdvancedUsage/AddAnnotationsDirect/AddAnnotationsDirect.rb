@@ -1,7 +1,7 @@
 # Import modules
 require './Common.rb'
 
-class AddAreaAnnotation
+class AddAnnotationsDirect
   def self.Run()
 
     # Getting instance of the API
@@ -31,13 +31,12 @@ class AddAreaAnnotation
     options = GroupDocsAnnotationCloud::AnnotateOptions.new()
     options.file_info = file_info
     options.annotations = [$a1]
-    options.output_path = "Output/output.docx"
 
-    $request = GroupDocsAnnotationCloud::AnnotateRequest.new(options)
+    $request = GroupDocsAnnotationCloud::AnnotateDirectRequest.new(options)
 
     # Executing an API.
-    result = $api.annotate($request)
+    result = $api.annotate_direct($request)
 
-    puts("AddAreaAnnotation: Area Annotation added: " + result.href)
+    puts("AddAnnotationsDirect: file size = " + result.length.to_s)
   end
 end

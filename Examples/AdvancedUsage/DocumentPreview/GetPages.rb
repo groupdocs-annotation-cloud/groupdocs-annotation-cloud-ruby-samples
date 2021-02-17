@@ -7,11 +7,14 @@ class GetPages
     # Getting instance of the API
     $api = GroupDocsAnnotationCloud::PreviewApi.from_config($config)
 
-    $request = GroupDocsAnnotationCloud::GetPagesRequest.new("annotationdocs\\one-page.docx", nil, nil, nil, nil, nil, nil, "")
+    file_info = GroupDocsAnnotationCloud::FileInfo.new()
+    file_info.file_path = "annotationdocs\\one-page.docx"
+    options = GroupDocsAnnotationCloud::PreviewOptions.new()
+    options.file_info = file_info
 
-    # Executing an API.
-    $response = $api.get_pages($request)
+    request = GroupDocsAnnotationCloud::GetPagesRequest.new(options)
+    response = $api.get_pages(request)
 
-    puts("GetPages: pages count = " + ($response.total_count).to_s)
+    puts("GetPages: pages count = " + (response.total_count).to_s)
   end
 end
