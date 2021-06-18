@@ -25,26 +25,26 @@ class RunExamples
 
   require './AdvancedUsage/AddAnnotation/AddAreaAnnotation.rb'
   AddAreaAnnotation.Run()
-  # require './AdvancedUsage/AddAnnotation/AddArrowAnnotation.rb'
-  # AddArrowAnnotation.Run()
+  require './AdvancedUsage/AddAnnotation/AddArrowAnnotation.rb'
+  AddArrowAnnotation.Run()
   require './AdvancedUsage/AddAnnotation/AddMultipleAnnotations.rb'
   AddMultipleAnnotations.Run()
-  # require './AdvancedUsage/AddAnnotation/AddPointAnnotation.rb'
-  # AddPointAnnotation.Run()
-  # require './AdvancedUsage/AddAnnotation/AddPolylineAnnotation.rb'
-  # AddPolylineAnnotation.Run()
-  # require './AdvancedUsage/AddAnnotation/AddTextFieldAnnotation.rb'
-  # AddTextFieldAnnotation.Run()
-  # require './AdvancedUsage/AddAnnotation/AddTextRedactionAnnotation.rb'
-  # AddTextRedactionAnnotation.Run()
-  # require './AdvancedUsage/AddAnnotation/AddTextReplacementAnnotation.rb'
-  # AddTextReplacementAnnotation.Run()
-  # require './AdvancedUsage/AddAnnotation/AddTextStrikeoutAnnotation.rb'
-  # AddTextStrikeoutAnnotation.Run()
-  # require './AdvancedUsage/AddAnnotation/AddTextUnderlineAnnotation.rb'
-  # AddTextUnderlineAnnotation.Run()
-  # require './AdvancedUsage/AddAnnotation/AddWatermarkAnnotation.rb'
-  # AddWatermarkAnnotation.Run()                    
+  require './AdvancedUsage/AddAnnotation/AddPointAnnotation.rb'
+  AddPointAnnotation.Run()
+  require './AdvancedUsage/AddAnnotation/AddPolylineAnnotation.rb'
+  AddPolylineAnnotation.Run()
+  require './AdvancedUsage/AddAnnotation/AddTextFieldAnnotation.rb'
+  AddTextFieldAnnotation.Run()
+  require './AdvancedUsage/AddAnnotation/AddTextRedactionAnnotation.rb'
+  AddTextRedactionAnnotation.Run()
+  require './AdvancedUsage/AddAnnotation/AddTextReplacementAnnotation.rb'
+  AddTextReplacementAnnotation.Run()
+  require './AdvancedUsage/AddAnnotation/AddTextStrikeoutAnnotation.rb'
+  AddTextStrikeoutAnnotation.Run()
+  require './AdvancedUsage/AddAnnotation/AddTextUnderlineAnnotation.rb'
+  AddTextUnderlineAnnotation.Run()
+  require './AdvancedUsage/AddAnnotation/AddWatermarkAnnotation.rb'
+  AddWatermarkAnnotation.Run()                    
 
   require './AdvancedUsage/ExtractAnnotations/ExtractAnnotations.rb'
   ExtractAnnotations.Run()    
