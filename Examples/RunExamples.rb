@@ -43,6 +43,8 @@ class RunExamples
   AddTextStrikeoutAnnotation.Run()
   require './AdvancedUsage/AddAnnotation/AddTextUnderlineAnnotation.rb'
   AddTextUnderlineAnnotation.Run()
+  require './AdvancedUsage/AddAnnotation/AddSquigglyAnnotation.rb'
+  AddSquigglyAnnotation.Run()  
   require './AdvancedUsage/AddAnnotation/AddWatermarkAnnotation.rb'
   AddWatermarkAnnotation.Run()                    
 
